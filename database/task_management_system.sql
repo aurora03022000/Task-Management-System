@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 03, 2023 at 12:55 AM
+-- Generation Time: Mar 03, 2023 at 01:44 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -110,6 +110,42 @@ CREATE TABLE `user` (
 --
 
 --
+-- Indexes for table `department`
+--
+ALTER TABLE `department`
+  ADD PRIMARY KEY (`department_id`);
+
+--
+-- Indexes for table `severity`
+--
+ALTER TABLE `severity`
+  ADD PRIMARY KEY (`severity_id`);
+
+--
+-- Indexes for table `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`status_id`);
+
+--
+-- Indexes for table `task`
+--
+ALTER TABLE `task`
+  ADD PRIMARY KEY (`task_id`);
+
+--
+-- Indexes for table `task_category`
+--
+ALTER TABLE `task_category`
+  ADD PRIMARY KEY (`task_id`);
+
+--
+-- Indexes for table `task_update`
+--
+ALTER TABLE `task_update`
+  ADD PRIMARY KEY (`task_id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -118,6 +154,42 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `department`
+--
+ALTER TABLE `department`
+  MODIFY `department_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `severity`
+--
+ALTER TABLE `severity`
+  MODIFY `severity_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `status`
+--
+ALTER TABLE `status`
+  MODIFY `status_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `task`
+--
+ALTER TABLE `task`
+  MODIFY `task_id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `task_category`
+--
+ALTER TABLE `task_category`
+  MODIFY `task_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `task_update`
+--
+ALTER TABLE `task_update`
+  MODIFY `task_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
